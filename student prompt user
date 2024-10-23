@@ -1,0 +1,30 @@
+// c structure 
+
+#include <stdio.h>
+#include<string.h>
+
+struct student {
+char name[25];
+char email[25];
+int phone_no;
+char reg_no[25];
+float marks;
+}student1, student2;
+
+int main()
+{
+//struct student student1 , student2 ;
+strcpy(student1.name,"Joyce");
+strcpy(student1.email,"joycendegwa@gmail.com");
+student1.phone_no=3868778;
+strcpy(student1.reg_no,"CT102/G/22778/24");
+student1.marks=99.9;
+
+printf("name %s\n", student1.name);
+printf("email %s\n", student1.email);
+printf("phone.no %d\n",student1.phone_no);
+printf("reg.no %s\n", student1.reg_no);
+printf("marks %f\n", student1.marks);
+
+return 0;
+}
